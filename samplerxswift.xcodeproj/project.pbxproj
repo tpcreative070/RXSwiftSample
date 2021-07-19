@@ -3,13 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31004273269540F600D9B04D /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3100426A269540C400D9B04D /* RxBlocking.xcframework */; };
+		31004274269540F600D9B04D /* RxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3100426A269540C400D9B04D /* RxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		31004275269540F700D9B04D /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3100426D269540D700D9B04D /* RxCocoa.xcframework */; };
+		31004276269540F700D9B04D /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3100426D269540D700D9B04D /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		31004277269540F900D9B04D /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31004269269540C200D9B04D /* RxRelay.xcframework */; };
+		31004278269540F900D9B04D /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31004269269540C200D9B04D /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		31004279269540FA00D9B04D /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3100426C269540D000D9B04D /* RxSwift.xcframework */; };
+		3100427A269540FA00D9B04D /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3100426C269540D000D9B04D /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3170AE32269ED78C00ECE622 /* Concurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3170AE31269ED78C00ECE622 /* Concurrent.swift */; };
+		3170AE34269ED7A100ECE622 /* ConcurentImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3170AE33269ED7A100ECE622 /* ConcurentImpl.swift */; };
+		3170AE39269ED8B300ECE622 /* XCGLogger.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3170AE36269ED8A400ECE622 /* XCGLogger.xcframework */; };
+		3170AE3A269ED8B300ECE622 /* XCGLogger.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3170AE36269ED8A400ECE622 /* XCGLogger.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3170AE3B269ED8B500ECE622 /* ObjcExceptionBridging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3170AE35269ED8A300ECE622 /* ObjcExceptionBridging.xcframework */; };
+		3170AE3C269ED8B500ECE622 /* ObjcExceptionBridging.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3170AE35269ED8A300ECE622 /* ObjcExceptionBridging.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3170AE40269ED9FD00ECE622 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3170AE3F269ED9FD00ECE622 /* MainViewModel.swift */; };
+		3170AE42269EDA2200ECE622 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3170AE41269EDA2200ECE622 /* Dependencies.swift */; };
+		3170AE44269EDB5800ECE622 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3170AE43269EDB5800ECE622 /* BaseViewModel.swift */; };
 		31B36EC12692FF7600B4E176 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B36EC02692FF7600B4E176 /* AppDelegate.swift */; };
 		31B36EC32692FF7600B4E176 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B36EC22692FF7600B4E176 /* SceneDelegate.swift */; };
-		31B36EC52692FF7600B4E176 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B36EC42692FF7600B4E176 /* ViewController.swift */; };
+		31B36EC52692FF7600B4E176 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B36EC42692FF7600B4E176 /* MainViewController.swift */; };
 		31B36EC82692FF7600B4E176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B36EC62692FF7600B4E176 /* Main.storyboard */; };
 		31B36ECA2692FF7800B4E176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B36EC92692FF7800B4E176 /* Assets.xcassets */; };
 		31B36ECD2692FF7800B4E176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B36ECB2692FF7800B4E176 /* LaunchScreen.storyboard */; };
@@ -34,11 +51,41 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		311FABA02693476A0019C71B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				31004278269540F900D9B04D /* RxRelay.xcframework in Embed Frameworks */,
+				3170AE3A269ED8B300ECE622 /* XCGLogger.xcframework in Embed Frameworks */,
+				3100427A269540FA00D9B04D /* RxSwift.xcframework in Embed Frameworks */,
+				3170AE3C269ED8B500ECE622 /* ObjcExceptionBridging.xcframework in Embed Frameworks */,
+				31004274269540F600D9B04D /* RxBlocking.xcframework in Embed Frameworks */,
+				31004276269540F700D9B04D /* RxCocoa.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		31004269269540C200D9B04D /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxRelay.xcframework; sourceTree = "<group>"; };
+		3100426A269540C400D9B04D /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxBlocking.xcframework; sourceTree = "<group>"; };
+		3100426C269540D000D9B04D /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxSwift.xcframework; sourceTree = "<group>"; };
+		3100426D269540D700D9B04D /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxCocoa.xcframework; sourceTree = "<group>"; };
+		3170AE31269ED78C00ECE622 /* Concurrent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concurrent.swift; sourceTree = "<group>"; };
+		3170AE33269ED7A100ECE622 /* ConcurentImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurentImpl.swift; sourceTree = "<group>"; };
+		3170AE35269ED8A300ECE622 /* ObjcExceptionBridging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ObjcExceptionBridging.xcframework; sourceTree = "<group>"; };
+		3170AE36269ED8A400ECE622 /* XCGLogger.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = XCGLogger.xcframework; sourceTree = "<group>"; };
+		3170AE3F269ED9FD00ECE622 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		3170AE41269EDA2200ECE622 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		3170AE43269EDB5800ECE622 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		31B36EBD2692FF7600B4E176 /* samplerxswift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = samplerxswift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B36EC02692FF7600B4E176 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31B36EC22692FF7600B4E176 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		31B36EC42692FF7600B4E176 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31B36EC42692FF7600B4E176 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		31B36EC72692FF7600B4E176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31B36EC92692FF7800B4E176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31B36ECC2692FF7800B4E176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +103,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31004279269540FA00D9B04D /* RxSwift.xcframework in Frameworks */,
+				31004275269540F700D9B04D /* RxCocoa.xcframework in Frameworks */,
+				31004277269540F900D9B04D /* RxRelay.xcframework in Frameworks */,
+				3170AE3B269ED8B500ECE622 /* ObjcExceptionBridging.xcframework in Frameworks */,
+				3170AE39269ED8B300ECE622 /* XCGLogger.xcframework in Frameworks */,
+				31004273269540F600D9B04D /* RxBlocking.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +129,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		311FAB6B269345060019C71B /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				3170AE35269ED8A300ECE622 /* ObjcExceptionBridging.xcframework */,
+				3170AE36269ED8A400ECE622 /* XCGLogger.xcframework */,
+				3100426A269540C400D9B04D /* RxBlocking.xcframework */,
+				3100426D269540D700D9B04D /* RxCocoa.xcframework */,
+				31004269269540C200D9B04D /* RxRelay.xcframework */,
+				3100426C269540D000D9B04D /* RxSwift.xcframework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		311FAB952693476A0019C71B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3170AE2E269ED71C00ECE622 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3170AE31269ED78C00ECE622 /* Concurrent.swift */,
+				3170AE33269ED7A100ECE622 /* ConcurentImpl.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3170AE2F269ED72100ECE622 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				3170AE41269EDA2200ECE622 /* Dependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		3170AE3D269ED9E200ECE622 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3170AE46269EDBC100ECE622 /* ViewModel */,
+				3170AE3E269ED9E900ECE622 /* Main */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3170AE3E269ED9E900ECE622 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				31B36EC42692FF7600B4E176 /* MainViewController.swift */,
+				3170AE3F269ED9FD00ECE622 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3170AE46269EDBC100ECE622 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3170AE43269EDB5800ECE622 /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		31B36EB42692FF7600B4E176 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +199,7 @@
 				31B36ED62692FF7800B4E176 /* samplerxswiftTests */,
 				31B36EE12692FF7800B4E176 /* samplerxswiftUITests */,
 				31B36EBE2692FF7600B4E176 /* Products */,
+				311FAB952693476A0019C71B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +216,12 @@
 		31B36EBF2692FF7600B4E176 /* samplerxswift */ = {
 			isa = PBXGroup;
 			children = (
+				3170AE3D269ED9E200ECE622 /* UI */,
+				3170AE2F269ED72100ECE622 /* Dependencies */,
+				3170AE2E269ED71C00ECE622 /* Core */,
+				311FAB6B269345060019C71B /* Framework */,
 				31B36EC02692FF7600B4E176 /* AppDelegate.swift */,
 				31B36EC22692FF7600B4E176 /* SceneDelegate.swift */,
-				31B36EC42692FF7600B4E176 /* ViewController.swift */,
 				31B36EC62692FF7600B4E176 /* Main.storyboard */,
 				31B36EC92692FF7800B4E176 /* Assets.xcassets */,
 				31B36ECB2692FF7800B4E176 /* LaunchScreen.storyboard */,
@@ -138,6 +258,7 @@
 				31B36EB92692FF7600B4E176 /* Sources */,
 				31B36EBA2692FF7600B4E176 /* Frameworks */,
 				31B36EBB2692FF7600B4E176 /* Resources */,
+				311FABA02693476A0019C71B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,9 +379,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31B36EC52692FF7600B4E176 /* ViewController.swift in Sources */,
+				3170AE42269EDA2200ECE622 /* Dependencies.swift in Sources */,
+				31B36EC52692FF7600B4E176 /* MainViewController.swift in Sources */,
 				31B36EC12692FF7600B4E176 /* AppDelegate.swift in Sources */,
+				3170AE32269ED78C00ECE622 /* Concurrent.swift in Sources */,
 				31B36EC32692FF7600B4E176 /* SceneDelegate.swift in Sources */,
+				3170AE44269EDB5800ECE622 /* BaseViewModel.swift in Sources */,
+				3170AE34269ED7A100ECE622 /* ConcurentImpl.swift in Sources */,
+				3170AE40269ED9FD00ECE622 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +564,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AQHNXZHZ8T;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/samplerxswift/Framework",
+				);
 				INFOPLIST_FILE = samplerxswift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,6 +580,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Debug;
 		};
@@ -457,7 +591,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AQHNXZHZ8T;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/samplerxswift/Framework",
+				);
 				INFOPLIST_FILE = samplerxswift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +607,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Release;
 		};
