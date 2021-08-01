@@ -53,7 +53,7 @@ class CombineLatestVC : UIViewController {
         isEnableBinding.do(onNext : { [weak self] isEnabled in
             guard let self = self else {return}
             self.actionButton.backgroundColor = isEnabled ? .systemOrange : .lightGray
-                           self.actionButton.isEnabled = isEnabled
+            self.actionButton.isEnabled = isEnabled
         })
             .subscribe()
             .disposed(by: disbag)

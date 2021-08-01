@@ -11,4 +11,8 @@ class BaseViewModel {
     init() {
         
     }
+    
+    func log(any : Any){
+        print(any)
+    }
 }
