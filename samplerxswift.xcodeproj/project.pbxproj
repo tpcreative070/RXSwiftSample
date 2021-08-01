@@ -15,6 +15,10 @@
 		31004278269540F900D9B04D /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31004269269540C200D9B04D /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		31004279269540FA00D9B04D /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3100426C269540D000D9B04D /* RxSwift.xcframework */; };
 		3100427A269540FA00D9B04D /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3100426C269540D000D9B04D /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		311F048226B682AC008F4998 /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311F048126B682AC008F4998 /* SnapKit.xcframework */; };
+		311F048426B682BF008F4998 /* CombineLatestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311F048326B682BF008F4998 /* CombineLatestVC.swift */; };
+		311F048626B682D7008F4998 /* CombineLatestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311F048526B682D7008F4998 /* CombineLatestViewModel.swift */; };
+		311F048826B683B7008F4998 /* CombineLatestVC+ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311F048726B683B7008F4998 /* CombineLatestVC+ViewFactory.swift */; };
 		3170AE32269ED78C00ECE622 /* Concurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3170AE31269ED78C00ECE622 /* Concurrent.swift */; };
 		3170AE34269ED7A100ECE622 /* ConcurentImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3170AE33269ED7A100ECE622 /* ConcurentImpl.swift */; };
 		3170AE39269ED8B300ECE622 /* XCGLogger.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3170AE36269ED8A400ECE622 /* XCGLogger.xcframework */; };
@@ -75,6 +79,10 @@
 		3100426A269540C400D9B04D /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxBlocking.xcframework; sourceTree = "<group>"; };
 		3100426C269540D000D9B04D /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxSwift.xcframework; sourceTree = "<group>"; };
 		3100426D269540D700D9B04D /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = RxCocoa.xcframework; sourceTree = "<group>"; };
+		311F048126B682AC008F4998 /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SnapKit.xcframework; sourceTree = "<group>"; };
+		311F048326B682BF008F4998 /* CombineLatestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineLatestVC.swift; sourceTree = "<group>"; };
+		311F048526B682D7008F4998 /* CombineLatestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineLatestViewModel.swift; sourceTree = "<group>"; };
+		311F048726B683B7008F4998 /* CombineLatestVC+ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CombineLatestVC+ViewFactory.swift"; sourceTree = "<group>"; };
 		3170AE31269ED78C00ECE622 /* Concurrent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concurrent.swift; sourceTree = "<group>"; };
 		3170AE33269ED7A100ECE622 /* ConcurentImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurentImpl.swift; sourceTree = "<group>"; };
 		3170AE35269ED8A300ECE622 /* ObjcExceptionBridging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ObjcExceptionBridging.xcframework; sourceTree = "<group>"; };
@@ -104,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31004279269540FA00D9B04D /* RxSwift.xcframework in Frameworks */,
+				311F048226B682AC008F4998 /* SnapKit.xcframework in Frameworks */,
 				31004275269540F700D9B04D /* RxCocoa.xcframework in Frameworks */,
 				31004277269540F900D9B04D /* RxRelay.xcframework in Frameworks */,
 				3170AE3B269ED8B500ECE622 /* ObjcExceptionBridging.xcframework in Frameworks */,
@@ -129,9 +138,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		311F048026B6825B008F4998 /* CombineLatest */ = {
+			isa = PBXGroup;
+			children = (
+				311F048326B682BF008F4998 /* CombineLatestVC.swift */,
+				311F048526B682D7008F4998 /* CombineLatestViewModel.swift */,
+				311F048726B683B7008F4998 /* CombineLatestVC+ViewFactory.swift */,
+			);
+			path = CombineLatest;
+			sourceTree = "<group>";
+		};
 		311FAB6B269345060019C71B /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				311F048126B682AC008F4998 /* SnapKit.xcframework */,
 				3170AE35269ED8A300ECE622 /* ObjcExceptionBridging.xcframework */,
 				3170AE36269ED8A400ECE622 /* XCGLogger.xcframework */,
 				3100426A269540C400D9B04D /* RxBlocking.xcframework */,
@@ -169,6 +189,7 @@
 		3170AE3D269ED9E200ECE622 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				311F048026B6825B008F4998 /* CombineLatest */,
 				3170AE46269EDBC100ECE622 /* ViewModel */,
 				3170AE3E269ED9E900ECE622 /* Main */,
 			);
@@ -380,12 +401,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3170AE42269EDA2200ECE622 /* Dependencies.swift in Sources */,
+				311F048426B682BF008F4998 /* CombineLatestVC.swift in Sources */,
 				31B36EC52692FF7600B4E176 /* MainViewController.swift in Sources */,
 				31B36EC12692FF7600B4E176 /* AppDelegate.swift in Sources */,
 				3170AE32269ED78C00ECE622 /* Concurrent.swift in Sources */,
+				311F048626B682D7008F4998 /* CombineLatestViewModel.swift in Sources */,
 				31B36EC32692FF7600B4E176 /* SceneDelegate.swift in Sources */,
 				3170AE44269EDB5800ECE622 /* BaseViewModel.swift in Sources */,
 				3170AE34269ED7A100ECE622 /* ConcurentImpl.swift in Sources */,
+				311F048826B683B7008F4998 /* CombineLatestVC+ViewFactory.swift in Sources */,
 				3170AE40269ED9FD00ECE622 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
